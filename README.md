@@ -1,4 +1,4 @@
-# Proyecto Canvas Auto Deportivo
+# Proyecto Canvas Sol
 
 ## Descripción
 Aplicación web desarrollada con HTML, CSS, JavaScript y Canvas API 2D que replica un automóvil deportivo mediante programación.
@@ -19,6 +19,3 @@ Aplicación web desarrollada con HTML, CSS, JavaScript y Canvas API 2D que repli
 
 ## Autor
 Agustin
-
-## GitHub Pages
-https://TUUSUARIO.github.io/canvas-auto/
