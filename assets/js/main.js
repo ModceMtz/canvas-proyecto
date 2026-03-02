@@ -1,29 +1,18 @@
-/* =====================================================
-   PROYECTO CANVAS API
-   Figura: Sol decorativo
-   Autor: Agustin
-=====================================================*/
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-/* =====================
-   CENTRO DEL SOL
-=====================*/
+//CENTRO DEL SOL
 const cx = canvas.width / 2;
 const cy = canvas.height / 2;
 
 
-/* =====================
-   FONDO
-=====================*/
+//FONDO
 ctx.fillStyle="#16cbce";
 ctx.fillRect(0,0,600,600);
 
 
-/* =====================
-   SOL PRINCIPAL
-=====================*/
+//SOL PRINCIPAL
 ctx.beginPath();
 ctx.arc(cx,cy,120,0,Math.PI*2);
 ctx.fillStyle="gold";
@@ -31,9 +20,7 @@ ctx.fill();
 ctx.stroke();
 
 
-/* =====================
-   RAYOS TRAPECIOS
-=====================*/
+//RAYOS TRAPECIOS
 function trapecio(x,y,rot){
     ctx.save();
     ctx.translate(x,y);
@@ -62,9 +49,7 @@ for(let i=0;i<8;i++){
 }
 
 
-/* =====================
-   TRIANGULOS
-=====================*/
+//TRIANGULOS
 function triangulo(x,y,rot){
     ctx.save();
     ctx.translate(x,y);
@@ -92,9 +77,7 @@ for(let i=0;i<8;i++){
 }
 
 
-/* =====================
-   OJOS
-=====================*/
+//OJOS
 ctx.beginPath();
 ctx.arc(cx-40,cy-20,15,0,Math.PI*2);
 ctx.fillStyle="#2c2c54";
@@ -105,18 +88,14 @@ ctx.arc(cx+40,cy-20,15,0,Math.PI*2);
 ctx.fill();
 
 
-/* =====================
-   SONRISA
-=====================*/
+//SONRISA
 ctx.beginPath();
 ctx.arc(cx,cy+25,35,0,Math.PI);
 ctx.lineWidth=3;
 ctx.stroke();
 
 
-/* =====================
-   ESTRELLAS
-=====================*/
+//ESTRELLAS
 function estrella(x,y,r){
     ctx.beginPath();
     for(let i=0;i<5;i++){
@@ -139,9 +118,7 @@ estrella(cx + 80, cy + 40, 12);
 estrella(cx + 40, cy + 90, 9);
 
 
-/* =====================
-   HEXAGONOS
-=====================*/
+//HEXAGONOS
 function hexagono(x,y,r){
     ctx.beginPath();
     for(let i=0;i<6;i++){
@@ -165,11 +142,9 @@ hexagono(cx - 55, cy + 65, 10);
 hexagono(cx - 30, cy + 90, 9);
 
 
-/* =====================
-   LUNA
-=====================*/
+//LUNA
 ctx.beginPath();
-ctx.arc(cx + 5, cy + 65, 12, 0, Math.PI * 2);
+ctx.arc(cx + 5, cy + 75, 12, 0, Math.PI * 2);
 ctx.fillStyle = "orange";
 ctx.fill();
 ctx.lineWidth = 2;
@@ -177,21 +152,19 @@ ctx.strokeStyle = "black";
 ctx.stroke();
 
 ctx.beginPath();
-ctx.arc(cx + 10, cy + 62, 12, 0, Math.PI * 2);
+ctx.arc(cx + 10, cy + 72, 12, 0, Math.PI * 2);
 ctx.fillStyle = "gold";
 ctx.fill();
 
 
-/* =====================
-   CORAZON
-=====================*/
+// CORAZON
 ctx.beginPath();
 ctx.moveTo(cx + 45, cy + 45);
 
-ctx.bezierCurveTo(cx + 45, cy + 35, cx + 60, cy + 35, cx + 60, cy + 50);
-ctx.bezierCurveTo(cx + 60, cy + 65, cx + 45, cy + 75, cx + 45, cy + 85);
+ctx.bezierCurveTo(cx + 45, cy + 25, cx + 60, cy + 35, cx + 60, cy + 50);
+ctx.bezierCurveTo(cx + 60, cy + 55, cx + 45, cy + 75, cx + 45, cy + 85);
 ctx.bezierCurveTo(cx + 45, cy + 75, cx + 30, cy + 65, cx + 30, cy + 50);
-ctx.bezierCurveTo(cx + 30, cy + 35, cx + 45, cy + 35, cx + 45, cy + 45);
+ctx.bezierCurveTo(cx + 30, cy + 25, cx + 45, cy + 35, cx + 45, cy + 45);
 
 ctx.fillStyle = "orange";
 ctx.fill();
