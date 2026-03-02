@@ -25,7 +25,7 @@ ctx.fillRect(0,0,600,600);
    SOL PRINCIPAL
 =====================*/
 ctx.beginPath();
-ctx.arc(300,300,120,0,Math.PI*2);
+ctx.arc(250,200,120,0,Math.PI*2);
 ctx.fillStyle="gold";
 ctx.fill();
 ctx.stroke();
@@ -41,9 +41,9 @@ function trapecio(x,y,rot){
 
     ctx.beginPath();
     ctx.moveTo(-25,0);
-    ctx.lineTo(25,0);
+    ctx.lineTo(60,0);
     ctx.lineTo(40,80);
-    ctx.lineTo(-40,80);
+    ctx.lineTo(-25,40);
     ctx.closePath();
 
     ctx.fillStyle="#f5b041";
