@@ -17,7 +17,7 @@ const cy = canvas.height / 2;
 /* =====================
    FONDO
 =====================*/
-ctx.fillStyle="#f2f2f2";
+ctx.fillStyle="#16cbce";
 ctx.fillRect(0,0,600,600);
 
 
